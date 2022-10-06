@@ -9,7 +9,10 @@ import { FoodproductComponent } from './foodproduct/foodproduct.component';
 import { AddfoodprodComponent } from './addfoodprod/addfoodprod.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import { EditfoodprodComponent } from './editfoodprod/editfoodprod.component'
+import { EditfoodprodComponent } from './editfoodprod/editfoodprod.component';
+import { StaffdetailComponent } from './staffdetail/staffdetail.component';
+import { AddstaffComponent } from './addstaff/addstaff.component';
+import { EditstaffComponent } from './editstaff/editstaff.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +20,10 @@ import { EditfoodprodComponent } from './editfoodprod/editfoodprod.component'
     RegistrationComponent,
     FoodproductComponent,
     AddfoodprodComponent,
-    EditfoodprodComponent
+    EditfoodprodComponent,
+    StaffdetailComponent,
+    AddstaffComponent,
+    EditstaffComponent
   ],
   imports: [
     BrowserModule,

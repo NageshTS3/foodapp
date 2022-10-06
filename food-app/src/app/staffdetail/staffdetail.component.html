@@ -1,0 +1,26 @@
+<div class="container">
+    <h3>Staff Detail</h3>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Role</th>
+            <th scope="col">Update</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let s of result.data">
+            <td>{{s.id}}</td>
+            <td>{{s.name}}</td>                                                     
+            <td>{{s.email}}</td>
+            <td>{{s.role}}</td>
+            <td><button class="btn btn-primary" type="button" [routerLink]="['/editstaff/',s.id]">Update</button></td>
+            <td><button class="btn btn-primary" type="button" (click)="deletestaff(s.id)">delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <br><br><br>
+      <button class="btn btn-primary" type="button" [routerLink]="['/addstaff']">add staff</button>
+</div>
